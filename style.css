@@ -1,0 +1,37 @@
+#header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+.form-inline {
+    margin-top: 20px;
+}
+
+.card {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card-body {
+    width: 100%;
+}
+
+#card-body {
+    width: 100%;
+}
+
+#card-group {
+    width: 100%;
+    margin-top: 0px;
+}
+
+#forecast {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-left: 15px;
+}
