@@ -2,135 +2,138 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Weather Dashboard</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Weather Dashboard</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script type="text/javascript"></script>
+  <script type="text/javascript"></script>
 </head>
 
 <body>
-<!-- Header -->
-    <div id="header">
-        <h1>Weather Dashboard</h1>
-    </div>
+  <!-- Header -->
+  <div id="header">
+    <h1>Weather Dashboard</h1>
+  </div>
 
-<!-- Container -->
-<div class="container">
+  <!-- Container -->
+  <div class="container">
 
 
-<!-- Search form -->
-        <div class="row">
-          <div class="col" id="search">
-            <form class="form-inline active-cyan-4">
+    <!-- Search form -->
+    <div class="row">
+      <div class="col" id="search">
+        <form id="cityInput">
+          <form class="form-inline active-cyan-4">
             <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search for a City"
-            aria-label="Search">
+              name="citySearch" id="citySearch" aria-label="Search">
             <i class="fas fa-search" aria-hidden="false"></i>
-            <button>Go</button>
-        </form>
-       
-        <br>
-        <ul class="list-group">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
+            <button id="go">Go</button>
+          </form>
+
+          <br>
+          <ul class="list-group">
+            <!-- <li class="list-group-item" id=list1></li>
+            <li class="list-group-item" id=></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li> -->
+          </ul>
 
 
-        </div>
+      </div>
 
-<!-- City Card  -->
-          <div class="col-9">
-            <div class="row" id="city">
-                    <div class="card">
-                            <div class="card-body">
-                              <blockquote class="blockquote mb-0">
-                                <h2>City
-                                </h2>
-                                <br>
-                                <p class="temp">Temperature:</p>
-                                <p class="humidity">Humidty:</p>
-                                <p class="windspeed">Windspeed:</p>
-                                <p class="uv">UV Index:</p>
+      <!-- City Card  -->
+      <div class="col-9">
+        <div class="row" id="city">
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <h2 id="choosenCity">City
+                </h2>
+                <br>
+                <p class="temp">Temperature:</p>
+                <p class="humidity">Humidty:</p>
+                <p class="windspeed">Windspeed:</p>
+                <!-- <p class="uv">UV Index:</p> -->
 
-                              </blockquote>
-                            </div>
-                          </div>
-            </div>
-<!-- 5 Day Forecast Card -->
-            <div class="row" id="forecast">
-                <h2>5-Day Forecast</h2>
-
-            </div>
-
-            <div class="row" id="forecastCards"></div>
-                <div class="card-group">
-                        <div class="card">
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">Date</h5>
-                            <img src=''> 
-                            <p class="temp5">Temp: </p>
-                            <p class="humidity5">Humidty:</p>
-                          </div>
-                        </div>
-                        <br>
-                    <div class="card">
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">Date</h5>
-                            <img src=''> 
-                            <p class="temp5">Temp: </p>
-                            <p class="humidity5">Humidty:</p>
-                          </div>
-                        </div>
-                        <br>
-                    <div class="card">
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">Date</h5>
-                            <img src=''> 
-                            <p class="temp5">Temp: </p>
-                            <p class="humidity5">Humidty:</p>
-                          </div>
-                        </div>
-                        <br>
-                    <div class="card">
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">Date</h5>
-                            <img src=''> 
-                            <p class="temp5">Temp: </p>
-                            <p class="humidity5">Humidty:</p>
-                          </div>
-                        </div>
-                        <br>
-                    <div class="card">
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">Date</h5>
-                            <img src=''> 
-                            <p class="temp5">Temp: </p>
-                            <p class="humidity5">Humidty:</p>
-                          </div>
-                        </div>
-                        <br>
-                    </div>
-                    </div>
-
-
+              </blockquote>
             </div>
           </div>
-          
+        </div>
+        <!-- 5 Day Forecast Card -->
+        <div class="row" id="forecast">
+          <h2>5-Day Forecast</h2>
+
         </div>
 
-    <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
-    
+        <div class="row" id="forecastCards"></div>
+        <div class="card-group">
+          <div class="card">
+
+            <div class="card-body">
+              <h5 class="card-title1"></h5>
+              <!-- <img src="" alt="Weather Image" id="imgOne"> -->
+              <p class="temp1">Temp:</p>
+              <p class="humidity1">Humidity:</p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+
+            <div class="card-body">
+              <h5 class="card-title2">Date</h5>
+              <!-- <img src="" alt="Weather Image" id="imgTwo"> -->
+              <p class="temp2">Temp: </p>
+              <p class="humidity2">Humidty:</p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+
+            <div class="card-body">
+              <h5 class="card-title3">Date</h5>
+              <!-- <img src="" alt="Weather Image" id="imgThree"> -->
+              <p class="temp3">Temp: </p>
+              <p class="humidity3">Humidty:</p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+
+            <div class="card-body">
+              <h5 class="card-title4">Date</h5>
+              <!-- <img src="" alt="Weather Image" id="imgFour"> -->
+              <p class="temp4">Temp: </p>
+              <p class="humidity4">Humidty:</p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+
+            <div class="card-body">
+              <h5 class="card-title5">Date</h5>
+              <!-- <img src="" alt="Weather Image" id="imgFive">  -->
+              <p class="temp5">Temp: </p>
+              <p class="humidity5">Humidty:</p>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
